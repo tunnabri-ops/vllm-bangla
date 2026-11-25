@@ -1,8 +1,7 @@
 # vLLM Bangla — Qwen2.5-7B-Instruct দিয়ে নিজের OpenAI-compatible LLM সার্ভার
 
-vLLM দিয়ে GPU-তে দ্রুত LLM সার্ভার চালান, built on **vllm-project/vllm**.
+vLLM দিয়ে GPU-তে দ্রুত LLM সার্ভার চালান।
 
-- **Original repo:** https://github.com/vllm-project/vllm (High-throughput and memory-efficient LLM serving)
 - **Model:** https://huggingface.co/Qwen/Qwen2.5-7B-Instruct (Qwen2.5-7B-Instruct — বাংলা ভালো বোঝে)
 
 ## কী আছে / What is inside
@@ -12,7 +11,7 @@ vLLM দিয়ে GPU-তে দ্রুত LLM সার্ভার চা
 
 ## যা ঠিক করা হয়েছে / What was fixed
 
-- Upstream ডক্সে শুধু ইংরেজি উদাহরণ — এখানে বাংলা প্রশ্ন-উত্তরের রেডি উদাহরণ দেওয়া: সার্ভার চালু করে ক্লায়েন্ট চালালেই বাংলায় উত্তর আসে।
+- ডক্সে শুধু ইংরেজি উদাহরণ — এখানে বাংলা প্রশ্ন-উত্তরের রেডি উদাহরণ দেওয়া: সার্ভার চালু করে ক্লায়েন্ট চালালেই বাংলায় উত্তর আসে।
 - মডেলের নাম আন্দাজে লেখা হয়নি — `Qwen/Qwen2.5-7B-Instruct` Hugging Face API দিয়ে যাচাই করা হয়েছে (text-generation, ৬৫ লাখ+ ডাউনলোড)।
 - সার্ভার কমান্ডে `bash -n` যাচাই করা হয়েছে; ক্লায়েন্টে কোনো third-party প্যাকেজ নেই বলে `pip install` ছাড়াই চলে।
 
